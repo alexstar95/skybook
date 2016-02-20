@@ -81,8 +81,6 @@ var generateProperties = function generateProperties(url){
 	return options;
 }
 
-// My module
-
 exports.requestRoutes = function(callback) {
 
 	var url = "http://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/GB/GBP/en-GB/BUCH/UK/anytime/anytime?apiKey=ah493775065522640948616442382335";

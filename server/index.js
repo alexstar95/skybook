@@ -13,14 +13,15 @@ var connection = mysql.createConnection({
 });
 
 connection.connect(function (err){
-	if(!err) {
+	
+  if(!err) {
 	    console.log("Database is connected ... nn");    
 	} else {
 	    console.log("Error connecting database ... nn");    
 	}
 });
 
-app.get('/flightss', function (req, res) {
+app.get('/flights', function (req, res) {
 
   var createFlight = "INSERT INTO flights(source, dest, price, company_id, from_date, to_date) VALUES(?,?,?,?,?,?)";
   var getCompanyID = "SELECT company_id FROM company WHERE name LIKE ?";
@@ -62,7 +63,6 @@ app.get('/places', function (req, res) {
   skyAPI.getPlaces(function () {
   
     var places = skyAPI.places;
-
     res.send(places);
 
     places.forEach(function (item) {
