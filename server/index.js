@@ -15,17 +15,12 @@ app.listen(3000, function () {
 	var connection = mysql.createConnection({
   		host     : "localhost",
   		user     : "root",
-  		password : "mamaligos",
+  		password : "barlad",
   		database : "skybook"
 	});
 	connection.connect();
 
-	connection.query("select * from user",function(err,rows){
-       	rows = rows[0];
-        if(!err) {
-            console.log(rows.name);
-        }           
-    });
+	console.log("dadasdas");
 
   //This is just an example of how modules work 
   //IGNORE !!!
