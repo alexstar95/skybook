@@ -21,9 +21,10 @@ connection.connect(function(err){
 });
 
 app.get('/', function (req, res) {
-	skyAPI.requestRoutes();
-	
-  	res.send('Hello World!');
+	skyAPI.requestRoutes(function (){
+		res.send(skyAPI.FlightsArray);
+	});
+  	
 });
 
 app.listen(3000, function () {
@@ -35,9 +36,4 @@ app.listen(3000, function () {
 	        console.log(rows.name);
 	    }
 	});
-
-  	//This is just an example of how modules work 
-  	//IGNORE !!!
-  	var text = moduleexample.sayHello();
-  	console.log(text);
 });

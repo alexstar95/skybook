@@ -1,5 +1,7 @@
 var request = require('request');
+var flightsArray = [];
 
+module.exports.FlightsArray = flightsArray;
 var getPlaceNameFromID = function(id,source){
 	for (var i=0; i < source.length; i++){
 			if(source[i].PlaceId == id)
@@ -15,8 +17,6 @@ var getCarrierNameFromID = function(id, source){
 };
 
 var fromQuotesToFlightData = function(quotes){
-	var flightsArray = [];
-
 	for (var i=0; i < quotes.length; i++){
 			var auxFlight={},
 				auxFlight1={};
@@ -73,8 +73,7 @@ var generateProperties = function generateProperties(url){
 }
 
 // My module
-exports.requestRoutes = function() {
-	var flightsArray = [];
+exports.requestRoutes = function(callback) {
 	var url = "http://partners.api.skyscanner.net/apiservices/browseroutes/v1.0/GB/GBP/en-GB/BUCH/UK/anytime/anytime?apiKey=ah493775065522640948616442382335";
 	var options = generateProperties(url);
 
@@ -104,8 +103,9 @@ exports.requestRoutes = function() {
 		quotes = modelateQuotes(quotes);
 
 		//Building the array of  simulated flights
-		flightsArray = fromQuotesToFlightData(quotes);
+		module.exports.FlightsArray = fromQuotesToFlightData(quotes);
 
-		console.log(flightsArray);
+		//a callback with the exported var, not really sure how this works for now
+		callback(module.exports.FlightsArray);
 	});
 };
