@@ -21,11 +21,10 @@ connection.connect(function(err){
 });
 
 app.get('/', function (req, res) {
-	
-  
-  res.send(skyAPI.requestRoutes());
-  
-  res.send('Hello World!');
+
+	skyAPI.requestRoutes(function (){
+		res.send(skyAPI.FlightsArray);
+	});
 });
 
 app.listen(3000, function () {
