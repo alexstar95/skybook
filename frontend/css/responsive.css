@@ -238,10 +238,10 @@
         padding-right: 0;
     }
     .header-tour-package:hover {
-        color: #fc4242;
+        color: #5be2ed;
     }
     .header-tour-package:hover > i {
-        color: #fc4242;
+        color: #5be2ed;
     }
     .header-tour-listing {
         width: 100%;
