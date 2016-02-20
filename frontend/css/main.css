@@ -173,7 +173,7 @@ h5 {
     transform: translate(0, 0);
     content: "\f105";
     margin-right: 15px;
-    color: #fc4242;
+    color: #5be2ed;
     font-size: 15px;
 }
 .arrow-list a {
@@ -198,7 +198,7 @@ h5 {
     right: -5px;
     width: 10px;
     height: 10px;
-    background: #fc4242;
+    background: #5be2ed;
     border-radius: 50%;
     z-index: 99;
 }
@@ -277,7 +277,7 @@ h5 {
     outline: none;
 }
 .search input[type='submit']:hover + i {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .search .fa {
     font-size: 14px;
@@ -305,8 +305,8 @@ h5 {
     transition-duration: 0.3s;
 }
 .social-nav a:hover {
-    border-color: #fc4242;
-    background: #fc4242;
+    border-color: #5be2ed;
+    background: #5be2ed;
 }
 .social-nav a:hover i {
     color: #fff;
@@ -343,7 +343,7 @@ h5 {
     color: #999;
 }
 .booking-criteria {
-    background: #fc4242;
+    background: #5be2ed;
     padding: 31px 15px;
     color: #fff;
     margin: 0 -1px 33px -1px;
@@ -395,7 +395,7 @@ h5 {
     padding: 3px 11px;
 }
 .datepicker table tr th.dow {
-    background: #fc4242;
+    background: #5be2ed;
     color: #fff;
 }
 .accommodation {
@@ -488,7 +488,7 @@ h5 {
     font-weight: normal;
 }
 .contact-from .required {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .contact-from input,
 .contact-from textarea,
@@ -500,7 +500,7 @@ h5 {
     outline: none;
 }
 .contact-from input[type="submit"] {
-    background: #fc4242;
+    background: #5be2ed;
     color: #fff;
     font-family: "Montserrat", sans-serif;
     font-size: 18px;
@@ -579,7 +579,7 @@ h5 {
     background: #343434;
 }
 .header-tour-package {
-    background: #fc4242;
+    background: #5be2ed;
     position: relative;
     cursor: pointer;
 }
@@ -641,7 +641,7 @@ h5 {
 }
 .header-user-email:hover a,
 .header-user-email:hover i {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .main-nav {
     margin-top: 19px;
@@ -660,7 +660,7 @@ h5 {
 }
 .main-menu > li > a:hover {
     color: #000;
-    border-bottom: 2px solid #fc4242;
+    border-bottom: 2px solid #5be2ed;
 }
 .main-menu > li > ul {
     position: absolute;
@@ -702,10 +702,10 @@ h5 {
     text-transform: capitalize;
 }
 .main-menu > li ul a:hover {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .main-menu .current-menu-item > a {
-    border-bottom: 2px solid #fc4242;
+    border-bottom: 2px solid #5be2ed;
 }
 .header-search {
     position: relative;
@@ -715,7 +715,7 @@ h5 {
     cursor: pointer;
 }
 .header-search .fa:hover {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .header-search .search {
     position: absolute;
@@ -764,7 +764,7 @@ h5 {
 }
 
 .mega-menu .wrap li:last-child a{
-    color: #fc4242;
+    color: #5be2ed;
     border: 0;
 }
 
@@ -815,15 +815,15 @@ h5 {
     color: #333333;
 }
 .btn-red-border {
-    border-color: #fc4242;
+    border-color: #5be2ed;
     background: none;
-    color: #fc4242;
+    color: #5be2ed;
 }
 .btn-red-border:hover {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .btn-red {
-    background: #fc4242;
+    background: #5be2ed;
 }
 .btn-md {
     font-size: 15px;
@@ -847,10 +847,10 @@ h5 {
 }
 .dc-v1:first-letter {
     color: #fff;
-    background: #fc4242;
+    background: #5be2ed;
 }
 .dc-v2:first-letter {
-    border: 2px solid #fc4242;
+    border: 2px solid #5be2ed;
     color: #333333;
     padding: 13px;
 }
@@ -860,7 +860,7 @@ h5 {
     border-radius: 30px;
 }
 .dc-v4:first-letter {
-    color: #fc4242;
+    color: #5be2ed;
     font-size: 57px;
 }
 .tooltip-inner {
@@ -897,11 +897,11 @@ h5 {
     margin-bottom: 30px;
 }
 .price-table-wrap .hot-price h5 {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .call-out-box {
     border: 1px solid #e8e8e8;
-    border-left: 4px solid #fc4242;
+    border-left: 4px solid #5be2ed;
     padding: 20px 25px;
     background: #fff;
 }
@@ -910,7 +910,7 @@ h5 {
     font-size: 20px;
 }
 .call-out-box .call-out-btn {
-    border: 2px solid #fc4242;
+    border: 2px solid #5be2ed;
     padding: 15px;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
@@ -954,7 +954,7 @@ h5 {
     z-index: 99;
 }
 .nav-tabs li.active span {
-    border-color: transparent transparent transparent #fc4242;
+    border-color: transparent transparent transparent #5be2ed;
 }
 .nav-tabs > li > a {
     margin-right: 0;
@@ -966,16 +966,16 @@ h5 {
 .nav-tabs > li.active > a,
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
-    background: #fc4242;
+    background: #5be2ed;
     border: 0;
     color: #fff;
 }
 .nav-tabs > li:hover span {
-    border-color: transparent transparent transparent #fc4242;
+    border-color: transparent transparent transparent #5be2ed;
 }
 .nav-tabs > li:hover > a {
     border: 0;
-    background: #fc4242;
+    background: #5be2ed;
 }
 .panel-heading {
     padding: 0;
@@ -1002,10 +1002,10 @@ h5 {
     color: #fff;
 }
 .panel-default > .panel-heading:hover .panel-title span {
-    background: #fc4242;
+    background: #5be2ed;
 }
 .panel-default > .panel-heading:hover .panel-title span:after {
-    border-left-color: #fc4242;
+    border-left-color: #5be2ed;
 }
 .panel-title > a {
     display: inline-block;
@@ -1019,10 +1019,10 @@ h5 {
     color: #fff;
 }
 .panel-title a[aria-expanded="true"] span {
-    background: #fc4242;
+    background: #5be2ed;
 }
 .panel-title a[aria-expanded="true"] span:after {
-    border-left-color: #fc4242;
+    border-left-color: #5be2ed;
 }
 .panel-title > a,
 .panel-title > small,
@@ -1109,7 +1109,7 @@ h5 {
     text-transform: uppercase;
 }
 .booking-tabs .bookingform label span {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .booking-tabs .bookingform .form-control {
     box-shadow: none;
@@ -1135,7 +1135,7 @@ h5 {
     width: 100%;
 }
 .booking-tabs .input-group-addon {
-    background: #fc4242;
+    background: #5be2ed;
     border: 0;
     border-radius: 0;
     cursor: pointer;
@@ -1184,7 +1184,7 @@ h5 {
     left: 0;
     height: 10px;
     width: 0px;
-    background: #fc4242;
+    background: #5be2ed;
     padding: 0;
     margin: -1px;
 }
@@ -1220,7 +1220,7 @@ h5 {
 .percentage-text small.skill-arrow {
     width: 0;
     height: 0;
-    border-bottom: 10px solid #fc4242;
+    border-bottom: 10px solid #5be2ed;
     border-left: 10px solid transparent;
     position: absolute;
     top: 25px;
@@ -1277,10 +1277,10 @@ h5 {
     text-decoration: none;
 }
 .breadcrumb a:hover {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .breadcrumb .active {
-    color: #fc4242;
+    color: #5be2ed;
 }
 /*------------------------------------------------------*/
 /* 05.Home styles
@@ -1341,7 +1341,7 @@ h5 {
     padding: 15px 17px;
 }
 .main-slider i:hover {
-    background: #fc4242;
+    background: #5be2ed;
 }
 .main-slider:hover .slick-prev {
     left: 0;
@@ -1403,7 +1403,7 @@ h5 {
     width: 150px;
     text-transform: uppercase;
     border: 0;
-    background: #fc4242;
+    background: #5be2ed;
     padding: 7px 0;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
@@ -1561,7 +1561,7 @@ h5 {
 .tour-carousel .slick-prev .fa {
     width: 60px;
     height: 60px;
-    background: #fc4242;
+    background: #5be2ed;
     color: #fff;
     font-size: 30px;
     border-radius: 30px;
@@ -1613,7 +1613,7 @@ h5 {
     font-size: 18px;
 }
 .tour-price-off {
-    background: #fc4242;
+    background: #5be2ed;
     padding: 1px 10px;
     color: #fff;
     font-weight: 500;
@@ -1622,7 +1622,7 @@ h5 {
     margin: 18px;
 }
 .more-details {
-    color: #fc4242;
+    color: #5be2ed;
     font-size: 13px;
     font-style: italic;
     float: right;
@@ -1680,7 +1680,7 @@ h5 {
     padding: 11px 15px;
 }
 .tour-by-destination .fa:hover {
-    background: #fc4242;
+    background: #5be2ed;
     color: #fff;
 }
 .tour-by-destination h5 {
@@ -1745,12 +1745,12 @@ h5 {
     margin-bottom: 20px;
 }
 .advance-tour-filter .widget-title {
-    background: #fc4242;
+    background: #5be2ed;
     margin: 0;
     padding: 12px 17px;
     margin-bottom: 25px;
     color: #fff;
-    border-bottom: 1px dashed #fc4242;
+    border-bottom: 1px dashed #5be2ed;
 }
 .advance-tour-filter .search {
     margin: 20px 20px 0 20px;
@@ -1822,7 +1822,7 @@ h5 {
     border-radius: 0;
 }
 .advance-tour-filter .ui-slider .ui-slider-range {
-    background: #fc4242;
+    background: #5be2ed;
 }
 .advance-tour-filter .ui-state-hover,
 .advance-tour-filter .ui-widget-content,
@@ -1830,7 +1830,7 @@ h5 {
 .advance-tour-filter .ui-state-default,
 .advance-tour-filter .ui-widget-content .ui-state-default,
 .advance-tour-filter .ui-widget-header .ui-state-default {
-    background: #fc4242;
+    background: #5be2ed;
     border: 0;
     outline: none;
 }
@@ -1881,7 +1881,7 @@ h5 {
 }
 .tour-single .tour-post-meta i {
     font-size: 14px;
-    color: #fc4242;
+    color: #5be2ed;
     margin-right: 10px;
 }
 .tour-single .tour-single-contents {
@@ -2026,7 +2026,7 @@ h5 {
     display: inline-block;
     font: normal normal normal 14px/1 FontAwesome;
     font-size: 30px;
-    color: #fc4242;
+    color: #5be2ed;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -2068,16 +2068,16 @@ h5 {
     margin: -1px;
 }
 .service-var-1 .wrapper:hover .icon {
-    background: #fc4242;
+    background: #5be2ed;
 }
 .service-var-1 .wrapper:hover i {
     color: #fff;
 }
 .service-var-1 .wrapper:hover .icon:before {
-    border-bottom-color: #fc4242;
+    border-bottom-color: #5be2ed;
 }
 .service-var-1 .wrapper:hover .icon:after {
-    border-top-color: #fc4242;
+    border-top-color: #5be2ed;
 }
 .service-var-1 .feature-img {
     display: inline-block;
@@ -2113,7 +2113,7 @@ h5 {
     transition-duration: 0.3s;
 }
 .service-var-1 .feature-img:hover {
-    border-bottom-color: #fc4242;
+    border-bottom-color: #5be2ed;
 }
 .service-var-1 .feature-img:hover p,
 .service-var-1 .feature-img:hover .overlay {
@@ -2177,7 +2177,7 @@ h5 {
     margin: 0 40px 30px 0;
 }
 .service-var-2 small {
-    color: #fc4242;
+    color: #5be2ed;
     font-size: 13px;
     font-style: italic;
 }
@@ -2209,7 +2209,7 @@ h5 {
     text-decoration: none;
 }
 .service-var-2 .more:hover {
-    background: #fc4242;
+    background: #5be2ed;
 }
 .service-var-2 .more:hover .fa {
     color: #fff;
@@ -2342,11 +2342,11 @@ h5 {
     padding: 0 15px 35px 15px;
 }
 .sidebar .widget-title {
-    background: #fc4242;
+    background: #5be2ed;
     margin: 0 -15px 30px -15px;
     padding: 10px 15px;
     color: #fff;
-    border-bottom: 2px dashed #fc4242;
+    border-bottom: 2px dashed #5be2ed;
 }
 .sidebar .search {
     margin-bottom: 30px;
@@ -2415,7 +2415,7 @@ h5 {
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
     color: #fff;
-    background: #fc4242;
+    background: #5be2ed;
     padding: 3px 20px;
     margin-left: 10px;
 }
@@ -2467,7 +2467,7 @@ h5 {
     position: absolute;
     top: 54px;
     left: 0;
-    background: #fc4242;
+    background: #5be2ed;
     color: #fff;
     width: 91%;
     display: inline-block;
@@ -2631,7 +2631,7 @@ h5 {
     background: #fff;
 }
 .calender-listing .calender-date-listing.available .t-btn {
-    background: #fc4242;
+    background: #5be2ed;
 }
 .c-layouts {
     display: none;
@@ -2696,7 +2696,7 @@ h5 {
     border-radius: 50%;
 }
 .blog-post .read-more:hover i {
-    background: #fc4242;
+    background: #5be2ed;
     color: #fff;
 }
 #pagination {
@@ -2717,7 +2717,7 @@ h5 {
     border-right: 1px solid #e8e8e8;
 }
 #pagination .active {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .blog-single .blog-post {
     margin-right: 0;
@@ -2751,14 +2751,14 @@ h5 {
     color: #777;
 }
 .blog-single .post-meta-single a:hover {
-    color: #fc4242;
+    color: #5be2ed;
     text-decoration: underline;
 }
 .blog-single .post-meta-single .shares {
     color: #777;
 }
 .blog-single .post-meta-single .shares i {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .comments {
     margin-bottom: 40px;
@@ -2812,11 +2812,11 @@ h5 {
 }
 .comment-reply-link {
     float: right;
-    color: #fc4242;
+    color: #5be2ed;
     text-transform: uppercase;
 }
 .comment-reply-link i {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .respond-title {
     margin-bottom: 30px;
@@ -2838,7 +2838,7 @@ h5 {
 .contact-template .contact-details .title {
     color: #fff;
     font-size: 14px;
-    background: #fc4242;
+    background: #5be2ed;
     padding: 8px 10px 7px 30px;
     position: relative;
     margin-top: 0;
@@ -2850,7 +2850,7 @@ h5 {
     left: -53px;
     top: -18px;
     background: #fff;
-    border: 2px solid #fc4242;
+    border: 2px solid #5be2ed;
     border-radius: 50%;
     color: #333;
     font-size: 20px;
@@ -2869,7 +2869,7 @@ h5 {
     width: 0;
     height: 0;
     border-top: 15px solid transparent;
-    border-left: 15px solid #fc4242;
+    border-left: 15px solid #5be2ed;
     border-bottom: 15px solid transparent;
 }
 .contact-template .contact-details address {
@@ -3002,7 +3002,7 @@ h5 {
 }
 .checkout-details .main-title {
     padding: 10px;
-    background: #fc4242;
+    background: #5be2ed;
     color: #fff;
     margin-top: 0;
 }
@@ -3023,7 +3023,7 @@ h5 {
     display: inline-block;
 }
 .checkout-details .date {
-    color: #fc4242;
+    color: #5be2ed;
     font-size: 14px;
     margin-top: -4px;
 }
@@ -3077,7 +3077,7 @@ h5 {
     margin: 0;
 }
 .page-404 .error-code span {
-    color: #fc4242;
+    color: #5be2ed;
 }
 .page-404 .error-code,
 .page-404 .error-statement {
