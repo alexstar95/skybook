@@ -18,6 +18,7 @@
   "homepage": "https://github.com/alexstar95/skybook#readme",
   "dependencies": {
     "express": "^4.13.4",
-    "mysql": "^2.10.2"
+    "mysql": "^2.10.2",
+    "request": "^2.69.0"
   }
 }

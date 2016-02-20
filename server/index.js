@@ -1,29 +1,41 @@
 //some example module creation to systemize the code
 var moduleexample = require("./lib/module-example.js");
 var express = require('express');
+var skyAPI = require("./lib/skyAPI");
+var mysql = require('mysql');
 var app = express();
 
+var connection = mysql.createConnection({
+		host     : "localhost",
+		user     : "root",
+		password : "barlad",
+		database : "skybook"
+});
+
+connection.connect(function(err){
+	if(!err) {
+	    console.log("Database is connected ... nn");    
+	} else {
+	    console.log("Error connecting database ... nn");    
+	}
+});
 
 app.get('/', function (req, res) {
+	
+  
+  res.send(skyAPI.requestRoutes());
+  
   res.send('Hello World!');
 });
 
 app.listen(3000, function () {
-  	console.log('Example app listening on port 3000!');
-	//login to that database
-	var mysql      = require('mysql');
-	var connection = mysql.createConnection({
-  		host     : "localhost",
-  		user     : "root",
-  		password : "barlad",
-  		database : "skybook"
+
+	console.log('Example app listening on port 3000!');
+
+	connection.query("select * from users",function(err,rows){
+	   	rows = rows[0];
+	    if(!err) {
+	        console.log(rows);
+	    }
 	});
-	connection.connect();
-
-	console.log("dadasdas");
-
-  //This is just an example of how modules work 
-  //IGNORE !!!
-  var text = moduleexample.sayHello();
-  console.log(text);
 });
