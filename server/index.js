@@ -1,8 +1,9 @@
 //some example module creation to systemize the code
 var moduleexample = require("./lib/module-example.js");
 var express = require('express');
-var app = express();
+var skyAPI = require("./lib/skyAPI");
 var mysql = require('mysql');
+var app = express();
 
 var connection = mysql.createConnection({
 		host     : "localhost",
@@ -20,7 +21,9 @@ connection.connect(function(err){
 });
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+	skyAPI.requestRoutes();
+	
+  	res.send('Hello World!');
 });
 
 app.listen(3000, function () {
@@ -30,8 +33,7 @@ app.listen(3000, function () {
 	   	rows = rows[0];
 	    if(!err) {
 	        console.log(rows.name);
-	    }           
-	    
+	    }
 	});
 
   	//This is just an example of how modules work 
