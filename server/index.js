@@ -15,9 +15,9 @@ app.listen(3000, function () {
 
 app.get('/auth', function (req, res) {
 
-	res.sendFile(path.join(__dirname, '/../frontend/templates/index.html'));
+	res.sendFile(path.join(__dirname, '/../frontend/index.html'));
 });
 
 app.get('/myhome', function (req, res) {
-	res.sendFile(path.join(__dirname, ))
+	//res.sendFile(path.join(__dirname, ))
 });
