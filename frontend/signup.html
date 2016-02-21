@@ -1,17 +1,23 @@
 <html>
 	<head>
 		<title>Sign UP</title>
-		<link rel="stylesheet" href="#">
+		<link rel="stylesheet" href="css/signup.css">
 	</head>
 	<body>
-		<h3>Sign UP</h3>
-		<form action="/signupHandle" method="POST">
-			<input type="text" name="username" placeholder="Username ...">
-			<input type="text" name="firstName" placeholder="First Name ...">
-			<input type="text" name="lastName" placeholder="Last Name ...">
-			<input type="password" name="pass1" placeholder="Enter your password ...">
-			<input type="password" name="pass2" placeqholder="Retype your password ...">	
-			<input type="submit" name="submit" value="Sign Up">
-		</form>
+		<div class="body-wrapper">
+			<div class="form-wrapper">
+				<h3 class="title">Sign UP</h3>
+				<div class="form-fields-wrapper">
+					<form action="/signupHandle" method="POST" class="form-tag">
+						<input type="text" name="username" class="input-field" placeholder="Username ...">
+						<input type="text" name="firstName" class="input-field" placeholder="First Name ...">
+						<input type="text" name="lastName" class="input-field" placeholder="Last Name ...">
+						<input type="password" name="pass1" class="input-field" placeholder="Enter your password ...">
+						<input type="password" name="pass2" class="input-field" placeholder="Retype your password ...">	
+						<input type="submit" name="submit" class="input-field submit-btn" value="Sign Up">
+					</form>
+				</div>
+			</div>
+		</div>
 	</body>
 </html>
