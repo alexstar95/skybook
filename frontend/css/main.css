@@ -46,6 +46,14 @@
     font-weight: bold;
 }
 
+.page-title-booking {
+	font-size: 30px;
+    margin-bottom: 11.5px;
+	text-transform: uppercase;
+	color: #ffffff !important;
+    font-weight: bold;
+}
+
 ::-moz-selection {
     color: #fff;
     background: #333333;
@@ -1635,7 +1643,7 @@ h5 {
 }
 .more-details {
     color: #5be2ed;
-    font-size: 13px;
+    font-size: 14.5px;
     font-style: italic;
     float: right;
     display: inline-block;
