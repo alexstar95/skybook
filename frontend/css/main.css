@@ -1912,6 +1912,7 @@ h5 {
 .tour-single .tour-single-contents p {
     line-height: 24px;
     color: #777;
+	text-align: justify;
 }
 .tour-single .tour-contents-footer .btn-black-border {
     margin-right: 15px;
