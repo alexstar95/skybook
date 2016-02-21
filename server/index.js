@@ -10,7 +10,7 @@ var crypto = require('crypto');
 var connection = mysql.createConnection({
 		host     : "localhost",
 		user     : "root",
-		password : "mamaligos",
+		password : "barlad",
 		database : "skybook"
 });
 
@@ -155,7 +155,7 @@ app.post('/signupHandle', function (req, res) {
           
           function (err, rows) {
             if(rows !== undefined) {
-              console.log("User created");
+              res.sendFile(path.join(__dirname, '/../frontend/userSignedUp.html'));
             }
         });
     }
