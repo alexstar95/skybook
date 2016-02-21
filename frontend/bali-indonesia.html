@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>SkyScanner</title>
+    <title>SkyBook</title>
 
     <!-- Font Styles -->
     <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,500,700,400italic' rel='stylesheet' type='text/css'>
@@ -39,7 +39,8 @@
         <div class="site-header-head clearfix">
             <div class="container header-user h-card">
                 <div class="header-user-name pull-left">
-                    <span class="p-name">SkyBook</span>
+                    <span class="p-name">Not logged in</span>
+					<i class="fa fa-user"></i>
                 </div>
                 <div class="header-user-tel pull-right">
                     <i class="fa fa-mobile-phone fa-lg"></i>
@@ -59,99 +60,14 @@
                         <img src="images/logo.png" alt="logo"/>
                     </a>
                 </h1>
-                <div class="header-search pull-right clearfix">
-                    <i class="fa fa-search"></i>
-                    <div class="search clearfix">
-                        <form method="get"  class="search-form" action="#">
-                            <div>
-                                <input type="text" placeholder="Search" name="s" class="search-text" >
-                                <input type="submit" class="search-submit" value="" >
-                            </div>
-                        </form>
-                    </div>
-                </div>
                 <nav class="main-nav pull-right" role="navigation">
                     <div class="menu-primary-menu-container">
                         <ul id="menu-primary-menu" class="main-menu">
-                            <li>
-                                <a href="index.html">Home</a>
-                                <ul class="sub-menu">
-                                    <li><a href="home-var-two.html">Home two</a></li>
-                                    <li><a href="home-var-three.html">Home three</a></li>
-                                </ul>
-                            </li>
-                            <li class="mega-menu-nav">
-                                <a href="where-we-go.html">Where we go</a>
-                                <ul class="mega-menu clearfix">
-                                    <li class="pull-left wrap clearfix">
-                                        <img class="pull-left menu-img" src="images/mega-menu-img.jpg" alt="Mega Menu Image"/>
-                                        <ul class="mega-sub-menu">
-                                            <li>EUROPE</li>
-                                            <li><a href="european-discovery.html">European Discovery</a></li>
-                                            <li><a href="beach-holidays.html">Beach Holidays</a></li>
-                                            <li><a href="european-highlights.html">European Highlights</a></li>
-                                            <li><a href="all-tours.html">SEE MORE</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="pull-left wrap clearfix">
-                                        <img class="pull-left menu-img" src="images/mega-menu-img.jpg" alt="Mega Menu Image"/>
-                                        <ul class="mega-sub-menu">
-                                            <li>ASIA</li>
-                                            <li><a href="tropical-island.html">Tropical Island</a></li>
-                                            <li><a href="resorts.html">Resorts</a></li>
-                                            <li><a href="single-where-we-go.html">Asian Adventure</a></li>
-                                            <li><a href="all-tours.html">SEE MORE</a></li>
-                                        </ul>
-                                    </li>
-                                    <li class="pull-left wrap clearfix">
-                                        <img class="pull-left menu-img" src="images/mega-menu-img.jpg" alt="Mega Menu Image"/>
-                                        <ul class="mega-sub-menu">
-                                            <li>AFRICA</li>
-                                            <li><a href="western-africa.html">Western Africa</a></li>
-                                            <li><a href="south-africa.html">South Africa</a></li>
-                                            <li><a href="island-hopper-east.html">Island Hopper East</a></li>
-                                            <li><a href="all-tours.html">SEE MORE</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="#">Tours</a>
-                                <ul class="sub-menu">
-                                    <li><a href="beach-holidays.html">beach holidays</a></li>
-                                    <li><a href="city-breaks.html">City breaks</a></li>
-                                    <li><a href="tropical-island.html">Tropical Island</a></li>
-                                    <li><a href="resorts.html">Resorts</a></li>
-                                    <li><a href="single-where-we-go.html">Asian Adventure</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="special-offers.html">Special Offers</a></li>
-                            <li>
-                                <a href="#">Pages</a>
-                                <ul class="sub-menu">
-                                    <li> <a href="booking.html">Booking</a> </li>
-                                    <li><a href="checkout.html">Check Out</a></li>
-                                    <li><a href="single-where-we-go.html">Where we go Single</a></li>
-                                    <li><a href="shortcodes.html">Shortcodes</a></li>
-                                    <li><a href="404.html">404 Page</a></li>
-                                    <li>
-                                        <a href="#">Second Level Menu</a>
-                                        <ul class="inner-menu">
-                                            <li><a href="#">Third Level Menu</a></li>
-                                            <li><a href="#">Third Level Menu</a></li>
-                                            <li><a href="#">Third Level Menu</a></li>
-                                            <li><a href="#">Third Level Menu</a></li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a href="blog.html">Blog</a>
-                                <ul class="sub-menu">
-                                    <li><a href="single.html">Single</a></li>
-                                </ul>
-                            </li>
-                            <li> <a href="contact.html">Contact</a> </li>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="my-bookings.html">My Bookings</a></li>
+							<li><a href="sign-up.html">Sign Up</a></li>
+							<li><a href="sign-in.html">Sign In</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -162,28 +78,26 @@
         <div id="tropical-banner" class=" text-center clearfix">
             <img src=" images/banner.jpg" alt="banner"/>
             <div class="container banner-contents clearfix">
-                <h2 class="template-title p-name"><strong>Island Hopper East</strong></h2>
+                <h2 class="template-title p-name"><strong>Bali, Indonesia</strong></h2>
             </div>
             <div class="breadcrumb-wrapper clearfix">
                 <div class="container">
                     <ol class="breadcrumb">
-                        <li><a href="index.html" >Home</a></li>
-                        <li><a href="where-we-go.html" >Where We Go</a></li>
-                        <li class="active">Island Hopper East</li>
+                        <li><a href="index.html">Home</a></li>
+						<li><a href="my-bookings.html">My Bookings</a></li>
+                        <li class="active">Bali, Indonesia</li>
                     </ol>
                 </div>
             </div>
             <span class="overlay"></span>
         </div>
-
         <section class="tour-single clearfix">
             <div class="container">
-
                 <div class="row">
                     <div class="col-lg-9 col-sm-8">
                         <header class="entry-header animatedParent clearfix">
-                            <h3 class="pull-left tour-single-title animated growIn slower">Island Hopper East</h3>
-                            <span class="tour-price-single t-btn btn-red pull-right animated growIn slower">&#36;899.00</span>
+                            <h3 class="pull-left tour-single-title animated growIn slower">Bali, Indonesia</h3>
+                            <span class="tour-price-single t-btn btn-red pull-right animated growIn slower">&#8364;847.00</span>
                         </header>
                         <article class="tour-post-single clearfix">
                             <div class="tour-single-slider animatedParent clearfix">
@@ -200,13 +114,11 @@
                             </div>
                             <div class="tour-single-contents animatedParent clearfix">
                                 <div class="tour-post-meta pull-right animated fadeInUpShort clearfix">
-                                    <span><i class="fa fa-map-marker"></i><strong>Destination : &nbsp;</strong>Africa</span>
-                                    <span><i class="fa fa-clock-o"></i><strong>Duration : &nbsp;</strong>2 days</span>
-                                    <span><i class="fa fa-tags"></i><strong>Price : &nbsp;</strong>&#36;847</span>
+                                    <span><i class="fa fa-map-marker"></i><strong>Destination : &nbsp;</strong>Indonesia</span>
+                                    <span><i class="fa fa-clock-o"></i><strong>Duration : &nbsp;</strong>3 days</span>
+                                    <span><i class="fa fa-tags"></i><strong>Price : &nbsp;</strong>&#8364;847.00</span>
                                 </div>
-                                <p> Maecenas faucibus mollis interdum. Nulla vitae elit libero, a petra augue. Integer posua ereta ante venenatis dapibus posu vre velit aliquet. Aenean eu leo quam. Pellentesque ornadsgxare semetrt mo  lacinia quam venenatis vestibulum. Nulla vitae elit liberero, avelitu pharetra aug ue. Etiamums porta sem malesuada magna mollis euismod.</p>
-                                <p> Maecenas faucibus mollis interdum. Nulla vitae elit libero, a petra augue. Integer posua ereta ante venenatis dapibus posu vre velit aliquet. Aenean eu leo quam. Pellentesque ornadsgxare semetrt mo  lacinia quam venenatis vestibulum. Nulla vitae elit liberero, avelitu pharetra aug ue. Etiamums porta sem malesuada magna mollis euismod.</p>
-                                <p> Maecenas faucibus mollis interdum. Nulla vitae elit libero, a petra augue. Integer posua ereta ante venenatis dapibus posu vre velit aliquet. Aenean eu leo quam. Pellentesque ornadsgxare semetrt mo  lacinia quam venenatis vestibulum. Nulla vitae elit liberero, avelitu pharetra aug ue. Etiamums porta sem malesuada magna mollis euismod.</p>
+                                <p>Bali is a living postcard, an Indonesian paradise that feels like a fantasy. Soak up the sun on a stretch of fine white sand, or commune with the tropical creatures as you dive along coral ridges or the colorful wreck of a WWII war ship. On shore, the lush jungle shelters stone temples and mischievous monkeys. The “artistic capital” of Ubud is the perfect place to see a cultural dance performance, take a batik or silver-smithing workshop, or invigorate your mind and body in a yoga class.</p>
                                 <footer class="tour-contents-footer clearfix">
                                     <a class="t-btn btn-red pull-right" href="#" data-toggle="modal" data-target="#booking-popup">Booking Now</a>
                                     <a class="t-btn btn-black-border pull-right" href="#" data-toggle="modal" data-target="#ask-q-popup">Ask Question</a>
@@ -517,127 +429,49 @@
                                     </div>
                                 </footer>
                             </div>
-                            <div class="tour-single-schedule animatedParent clearfix">
-                                <ul class="nav nav-tabs animated fadeInUpShort" role="tablist">
-                                    <li role="presentation" class="active">
-                                        <a href="#1" id="1-tab" role="tab" data-toggle="tab" aria-controls="1" aria-expanded="true">DAY-1</a>
-                                        <span></span>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="#2" role="tab" id="2-tab" data-toggle="tab" aria-controls="2">DAY-2</a>
-                                        <span></span>
-                                    </li>
-                                    <li role="presentation">
-                                        <a href="#3" role="tab" id="3-tab" data-toggle="tab" aria-controls="3">DAY-3</a>
-                                        <span></span>
-                                    </li>
-                                </ul>
-                                <div class="tab-content animated fadeInDownShort">
-                                    <div role="tabpanel" class="tab-pane fade clearfix in active" id="1" aria-labelledby="1-tab">
-                                        <img class="tab-img alignleft" src="images/tab-img.jpg" alt="one">
-                                        <div class="contents">
-                                            <h5 class="p-title">Tropical paradise one</h5>
-                                            <p>
-                                                Maecenas faucibus mollis interdum. Nulla vitaeryr
-                                                elit libero, a pharetra augue. Integer posuere erero  ante  leo venenatis dapibus posuere velit aliquete Aenean eu leo quam. Pellentesque ornare semirat lacinia quam venenatis vestibulum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane fade clearfix" id="2" aria-labelledby="2-tab">
-                                        <img class="tab-img alignleft" src="images/tab-img.jpg" alt="one">
-                                        <div class="contents">
-                                            <h5 class="p-title">Tropical paradise two</h5>
-                                            <p>
-                                                Maecenas faucibus mollis interdum. Nulla vitaeryr
-                                                elit libero, a pharetra augue. Integer posuere erero  ante  leo venenatis dapibus posuere velit aliquete Aenean eu leo quam. Pellentesque ornare semirat lacinia quam venenatis vestibulum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div role="tabpanel" class="tab-pane fade clearfix" id="3" aria-labelledby="3-tab">
-                                        <img class="tab-img alignleft" src="images/tab-img.jpg" alt="one">
-                                        <div class="contents">
-                                            <h5 class="p-title">Tropical paradise three</h5>
-                                            <p>
-                                                Maecenas faucibus mollis interdum. Nulla vitaeryr
-                                                elit libero, a pharetra augue. Integer posuere erero  ante  leo venenatis dapibus posuere velit aliquete Aenean eu leo quam. Pellentesque ornare semirat lacinia quam venenatis vestibulum.
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="tour-single-rates animatedParent clearfix">
-                                <div class="accommodation animated fadeInUpShort clearfix">
-                                    <ul class="clearfix">
-                                        <li><strong>Economy Accomodation</strong> <span class="circle-icon"></span></li>
-                                        <li><strong>type</strong><span class="circle-icon"></span></li>
-                                        <li><strong>Jan-May</strong><span class="circle-icon"></span></li>
-                                        <li><strong>June-dec</strong></li>
-                                    </ul>
-                                    <ul class="clearfix">
-                                        <li>Thai Island hopper Resort</li>
-                                        <li>Single</li>
-                                        <li>&#36;550</li>
-                                        <li>&#36;450</li>
-                                    </ul>
-                                    <ul class="clearfix">
-                                        <li>Summer lake Family Hotel</li>
-                                        <li>Double</li>
-                                        <li>&#36;449</li>
-                                        <li>&#36;399</li>
-                                    </ul>
-                                </div>
-                                <div class="accommodation animated fadeInDownShort clearfix">
-                                    <ul class="clearfix">
-                                        <li><strong>Economy Accomodation</strong> <span class="circle-icon"></span></li>
-                                        <li><strong>type</strong><span class="circle-icon"></span></li>
-                                        <li><strong>Jan-May</strong><span class="circle-icon"></span></li>
-                                        <li><strong>June-dec</strong></li>
-                                    </ul>
-                                    <ul class="clearfix">
-                                        <li>Thai Island hopper Resort</li>
-                                        <li>Single</li>
-                                        <li>&#36;550</li>
-                                        <li>&#36;450</li>
-                                    </ul>
-                                    <ul class="clearfix">
-                                        <li>Summer lake Family Hotel</li>
-                                        <li>Double</li>
-                                        <li>&#36;449</li>
-                                        <li>&#36;399</li>
-                                    </ul>
-                                </div>
-                                <div class="accommodation animated fadeInUpShort clearfix">
-                                    <ul class="clearfix">
-                                        <li><strong>Economy Accomodation</strong> <span class="circle-icon"></span></li>
-                                        <li><strong>type</strong><span class="circle-icon"></span></li>
-                                        <li><strong>Jan-May</strong><span class="circle-icon"></span></li>
-                                        <li><strong>June-dec</strong></li>
-                                    </ul>
-                                    <ul class="clearfix">
-                                        <li>Thai Island hopper Resort</li>
-                                        <li>Single</li>
-                                        <li>&#36;550</li>
-                                        <li>&#36;450</li>
-                                    </ul>
-                                    <ul class="clearfix">
-                                        <li>Summer lake Family Hotel</li>
-                                        <li>Double</li>
-                                        <li>&#36;449</li>
-                                        <li>&#36;399</li>
-                                    </ul>
-                                </div>
-                            </div>
                         </article>
+						<div class="testimonial-var-two animatedParent clearfix">
+						<div class="container">
+							<header class="header-with-nav animatedParent clearfix">
+								<h3 class="title pull-left animated growIn slower">Our customers feedback</h3>
+								<a class="pull-right  animated growIn slower" href="#">Give feedback</a>
+							</header>
+							<div class="row">
+								<div class="col-sm-6">
+									<article class="testimonial var-two animated fadeInRightShort clearfix">
+										<figure class="avatar">
+											<img src="images/avatar.jpg" alt="avatar"/>
+										</figure>
+										<div class="contents">
+											<p>“Maecenas faucibus mollis intedum. Nulla vitaery elit ayt lbero pharetra augue. Integer posuere ererotu  anten tuer venenatise Dapibus posuere. Aenean eu leo quam”
+											</p>
+											<cite class="fn">- <strong>Steave Jhon,</strong> tourism Specialist</cite>
+										</div>
+									</article>
+								</div>
+								<div class="col-sm-6">
+									<article class="testimonial var-two animated fadeInLeftShort clearfix">
+										<figure class="avatar">
+											<img src="images/avatar.jpg" alt="avatar"/>
+										</figure>
+										<div class="contents">
+											<p>“Maecenas faucibus mollis intedum. Nulla vitaery elit ayt lbero pharetra augue. Integer posuere ererotu  anten tuer venenatise Dapibus posuere. Aenean eu leo quam”
+											</p>
+											<cite class="fn">- <strong>Steave Jhon,</strong> tourism Specialist</cite>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
                         <div class="related-tours clearfix">
                             <header class="header-with-nav animatedParent clearfix">
                                 <h3 class="title pull-left animated growIn slower">Related Tours</h3>
-                                <a class="pull-right animated growIn slower" href="#">SEE All Tours</a>
                             </header>
                             <div class="row">
                                 <div class="col-md-4 col-xs-6 animatedParent">
                                     <article class="tour-post animated fadeInLeftShort">
                                         <header class="tour-post-header clearfix">
-                                            <span class="tour-price pull-left">&#36;299.00</span>
+                                            <span class="tour-price pull-left">&#8364;249.00</span>
                                             <span class="tour-days pull-right"><i class="fa fa-clock-o"></i>&nbsp; 3 days</span>
                                         </header>
                                         <div class="tour-contents clearfix">
@@ -652,7 +486,7 @@
                                 <div class="col-md-4 col-xs-6 animatedParent">
                                     <article class="tour-post animated fadeInUpShort">
                                         <header class="tour-post-header clearfix">
-                                            <span class="tour-price pull-left">&#36;299.00</span>
+                                            <span class="tour-price pull-left">&#8364;189.00</span>
                                             <span class="tour-days pull-right"><i class="fa fa-clock-o"></i>&nbsp; 3 days</span>
                                         </header>
                                         <div class="tour-contents clearfix">
@@ -667,7 +501,7 @@
                                 <div class="col-md-4 col-xs-6 animatedParent">
                                     <article class="tour-post animated fadeInRightShort">
                                         <header class="tour-post-header clearfix">
-                                            <span class="tour-price pull-left">&#36;299.00</span>
+                                            <span class="tour-price pull-left">&#8364;199.00</span>
                                             <span class="tour-days pull-right"><i class="fa fa-clock-o"></i>&nbsp; 3 days</span>
                                         </header>
                                         <div class="tour-contents clearfix">
@@ -684,18 +518,6 @@
                     </div>
                     <div class="col-lg-3 col-sm-4">
                         <aside class="sidebar">
-                            <section class="search-widget animatedParent">
-                                <h5 class="hidden animated fadeInDownShort">Title</h5>
-                                <div class="search animated fadeInUpShort clearfix">
-                                    <form method="get" class="search-form" action="#">
-                                        <div>
-                                            <input type="text" placeholder="Search Category" name="s" class="search-text">
-                                            <input type="submit" class="search-submit" value="">
-                                            <i class="fa fa-search"></i>
-                                        </div>
-                                    </form>
-                                </div>
-                            </section>
                             <section class="widget recent-post-widget animatedParent">
                                 <h5 class="widget-title animated fadeInDownShort">Recent Blog Post</h5>
                                 <article class="post blog-post-widget clearfix animated fadeInUpShort">
