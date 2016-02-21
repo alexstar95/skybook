@@ -1,11 +1,11 @@
-//some example module creation to systemize the code
 var moduleexample = require("./lib/module-example.js");
 var express = require('express');
 var skyAPI = require("./lib/skyAPI");
 var mysql = require('mysql');
+var path  = require('path'); 
 var app = express();
-var path = require('path');
 var bodyParser = require('body-parser');
+var crypto = require('crypto');
 
 var connection = mysql.createConnection({
 		host     : "localhost",
@@ -13,6 +13,9 @@ var connection = mysql.createConnection({
 		password : "mamaligos",
 		database : "skybook"
 });
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
 
 connection.connect(function (err){
 	
@@ -132,6 +135,48 @@ app.get('/carriers', function (req, res) {
     });
   });
 });
+
+app.get('/signup', function (req, res) {
+
+  res.sendFile(path.join(__dirname, '/../frontend/signup.html'));
+});
+
+app.post('/signupHandle', function (req, res) {
+
+  if(req.body.pass1 === req.body.pass2) {
+    
+    if(!userExists(req.body.username)) {
+      
+      var hashedPass = crypto.createHmac('sha1', req.body.pass1).digest('hex');
+      var createUser = "INSERT INTO users(username, password, first_name, last_name, picture_id) VALUES(?,?,?,?, 1)";
+      
+      connection.query(createUser, 
+        [req.body.username, hashedPass, req.body.firstName, req.body.lastName],
+          
+          function (err, rows) {
+            if(rows !== undefined) {
+              console.log("User created");
+            }
+        });
+    }
+  }
+});
+
+function userExists (username) {
+
+  var query  = "SELECT user_id FROM users WHERE username LIKE ?";
+  var userId = undefined;
+
+  connection.query(query, [username], function (err, rows) {
+    
+    for (var entry in rows) {
+      userId = rows[entry];
+      break;
+    }
+  });
+
+  return userId ? true : false;
+}
 
 app.listen(3000, function () {
 
