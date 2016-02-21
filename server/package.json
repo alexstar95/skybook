@@ -17,8 +17,10 @@
   },
   "homepage": "https://github.com/alexstar95/skybook#readme",
   "dependencies": {
+    "body-parser": "^1.15.0",
     "express": "^4.13.4",
     "mysql": "^2.10.2",
+    "path": "^0.12.7",
     "request": "^2.69.0"
   }
 }

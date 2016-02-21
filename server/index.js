@@ -4,11 +4,13 @@ var express = require('express');
 var skyAPI = require("./lib/skyAPI");
 var mysql = require('mysql');
 var app = express();
+var path = require('path');
+var bodyParser = require('body-parser');
 
 var connection = mysql.createConnection({
 		host     : "localhost",
 		user     : "root",
-		password : "barlad",
+		password : "mamaligos",
 		database : "skybook"
 });
 
@@ -19,6 +21,36 @@ connection.connect(function (err){
 	} else {
 	    console.log("Error connecting database ... nn");    
 	}
+});
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended: true}));
+
+
+//login utility
+app.post('/login',function(req, res){
+	req = req.body;
+	var username = req.user;
+	var password = req.password;
+
+	connection.query("select * from users where username = ? and password = ?",[username, password], function (err,rows){
+	   	size = rows.length;
+	   	rows = rows[0];
+	  	
+	   	if(size == 1)
+	   		res.sendFile(path.join(__dirname, 'userlogged.html'));
+	   	else if(size > 1 ) console.log('Suspect behaviour !!!');
+	   		else console.log('Wrong credentials');
+
+	    if(!err) {
+	        console.log(rows);
+	    }
+	});
+});
+
+//login page serve 
+app.get('/login',function(req,res){
+	res.sendFile(path.join(__dirname, 'login.html'));
 });
 
 app.get('/flights', function (req, res) {
@@ -105,10 +137,10 @@ app.listen(3000, function () {
 
 	console.log('Example app listening on port 3000!');
 
-	connection.query("select * from users",function (err,rows){
+	/*connection.query("select * from users",function (err,rows){
 	   	rows = rows[0];
 	    if(!err) {
 	        console.log(rows);
 	    }
-	});
+	});*/
 });

@@ -65,9 +65,7 @@ var modelateQuotes = function modelateQuotes(quotes){
 };
 
 var generateProperties = function generateProperties(url){
-	
 	var options = {
-		
 		uri: url,
 		headers: {
 			'Content-Type' : 'application/json'
@@ -77,7 +75,6 @@ var generateProperties = function generateProperties(url){
 		followRedirect: true,
 		maxRedirects: 10
 	}
-
 	return options;
 }
 
