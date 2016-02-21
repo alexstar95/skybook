@@ -46,6 +46,14 @@
     font-weight: bold;
 }
 
+.page-title-booking {
+	font-size: 30px;
+    margin-bottom: 11.5px;
+	text-transform: uppercase;
+	color: #ffffff !important;
+    font-weight: bold;
+}
+
 ::-moz-selection {
     color: #fff;
     background: #333333;
