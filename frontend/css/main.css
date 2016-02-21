@@ -31,9 +31,21 @@
   */
 
 
+  
 /*------------------------------------------------------*/
 /* 00.Core styles
 /*------------------------------------------------------*/
+.main-title {
+	font-size: 30px;
+	margin-top: 65px;
+    margin-bottom: 11.5px;
+	text-transform: uppercase;
+	color: #ffffff;
+    text-align: right;
+    display: table;
+    font-weight: bold;
+}
+
 ::-moz-selection {
     color: #fff;
     background: #333333;
@@ -637,7 +649,7 @@ h5 {
     margin-bottom: 13px;
 }
 .site-branding {
-    padding: 45px 0;
+    padding: 15px 0;
 }
 .header-user-email:hover a,
 .header-user-email:hover i {
