@@ -30,33 +30,6 @@ connection.connect(function (err){
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
-
-//login utility
-app.post('/login',function(req, res){
-	req = req.body;
-	var username = req.user;
-	var password = req.password;
-
-	connection.query("select * from users where username = ? and password = ?",[username, password], function (err,rows){
-	   	size = rows.length;
-	   	rows = rows[0];
-	  	
-	   	if(size == 1)
-	   		res.sendFile(path.join(__dirname, 'userlogged.html'));
-	   	else if(size > 1 ) console.log('Suspect behaviour !!!');
-	   		else console.log('Wrong credentials');
-
-	    if(!err) {
-	        console.log(rows);
-	    }
-	});
-});
-
-//login page serve 
-app.get('/login',function(req,res){
-	res.sendFile(path.join(__dirname, 'login.html'));
-});
-
 app.get('/flights', function (req, res) {
 
   var createFlight = "INSERT INTO flights(source, dest, price, company_id, from_date, to_date) VALUES(?,?,?,?,?,?)";
@@ -161,6 +134,30 @@ app.post('/signupHandle', function (req, res) {
         });
     }
   }
+});
+
+app.get('/login',function(req,res){
+  res.sendFile(path.join(__dirname, '/../frontend/login.html'));
+});
+
+app.post('/login',function(req, res){
+  req = req.body;
+  var username = req.user;
+  var password = req.password;
+
+  connection.query("select * from users where username = ? and password = ?",[username, password], function (err,rows){
+      size = rows.length;
+      rows = rows[0];
+      
+      if(size == 1)
+        res.sendFile(path.join(__dirname, 'userlogged.html'));
+      else if(size > 1 ) console.log('Suspect behaviour !!!');
+        else console.log('Wrong credentials');
+
+      if(!err) {
+          console.log(rows);
+      }
+  });
 });
 
 function userExists (username) {
